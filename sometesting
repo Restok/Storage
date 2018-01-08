@@ -1,0 +1,22 @@
+def something():
+	import random
+	import turtle
+	t = turtle.Pen()
+	turtle.bgcolor("black")
+	t.color("red")
+	turtle.colormode(255)
+	currentColorval = 0
+	for x in (-360,0):
+		changeColorRGB()
+		for y in (-60, 0):
+			t.forward(10)
+			t.right(y)
+			t.backward(10)
+			t.right(y*-1)
+		t.right(x)
+		t.forward(30)
+		t.left(x*-1)
+		t.backward(30)
+input()
+
+something()
